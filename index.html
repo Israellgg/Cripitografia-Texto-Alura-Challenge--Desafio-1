@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="assets/iconpadlock.png" type="image/x-icon">
+    <title>Codificador de texto</title>
+</head>
+<body>
+    
+<header class="cabecalho">
+    <img class="cabecalho__img" src="assets/logo.png" alt="">
+</header>
+
+<main class="principal">
+    <section class="principal__secao">
+        <textarea class="principal__areatexto__input" placeholder="Digite seu texto" name="" id="input-text" cols="30" rows="10"></textarea>
+        <div class="principal__aviso">
+            <img src="assets/Vector.png" alt="">
+            <label class="principal__aviso__label" for="">Apenas letras minúsculas e sem acento.</label>
+        </div>
+        
+        <div class="principal__div__botoes">
+            <button onclick="criptografar()" class="principal__botao__cri" id="btn_inc"  >Criptografar</button>
+            <button onclick="descriptografar()" class="principal__botao__desc" id="btn_desc" >Descriptografar</button>
+        </div>
+    </section>
+
+    <section class="segunda__secao">
+        <div class="segunda__secao__div" id="output-text" >
+            <img class="segunda__secao__img" src="assets/img-share.png" alt="">
+            <p class="segunda__secao___titulo" >Nenhuma mensagem encontrada</p>
+            <p class="segunda__secao__paragrafo" >Digite um texto que você deseja criptografar ou descriptografar.</p>
+        </div>
+    </section>
+
+</main>
+
+<footer class="rodape">
+    
+    <p class="rodape__rotulo">
+        Desenvolvido por -
+        <a class="rodape__link" href="https://github.com/Israellgg"> Israel Fernandes</a>
+    </p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
